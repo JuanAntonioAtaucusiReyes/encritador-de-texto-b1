@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- hoja de estilos-->
+    <link rel="stylesheet" href="/styles/styleOne.css" />
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/4d680a416a.js" crossorigin="anonymous"></script>
+
+    <title>Encritador de texto AR</title>
+</head>
+
+<body>
+    <main>
+    <div class="container">
+        <!-- lado A-->
+        <div class="container__encriptar">
+            <div class="titulo__logo__encriptador">
+                <div class="ubicar__logo"><img class="img__logo" src="/img/logo.png" alt="" /></div>
+                <div>
+                    <h1>Encriptador</h1>
+                </div>
+            </div>
+            <div class="caja__texto__botton">
+                <div class="caja__texto">
+                    <textarea name="" id="area__texto" oninput="validarTexto(this);" placeholder="Ingrese el texto aqui" required></textarea>
+                    <div>
+                        <h3 class="colortex"> <i class="fa-solid fa-circle-exclamation colortex"></i> Solo minusculas y sin asento</h3>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button class="btn" id="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn" id="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="btn" id="clear" onclick="btnLimpiar()" >Clear</button>
+                </div>
+            </div>
+        </div>
+        <!-- lado B-->
+        <div class="container__desencriptar">
+            <div class="img__textos" id="inicioEncriptar">
+                <div class="imagen">
+                    <img src="/img/hacker_2.jpg" alt="hacker" class="imagenH"/>
+                </div>
+                <div class="mensaje_texto">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <h3>Ingresa el texto que desees encriptar o desencriptar</h3>
+                </div>
+            </div>
+            <div class="container__resultado" id="mostrar__resultado">
+                <textarea name="" id="textoEncriptado" class="resultado_encriptado" readonly></textarea>
+                <div class="centrar__botone">
+                    <button id="copiarTextoicon" class="btnCopiar" onclick="copiartexto();"><i class="fa-solid fa-clipboard"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+    </main>
+    <footer>
+        <div class="autor">
+            <p>© Antonio Reyes</p>
+            <a class="iconGit" href=""><i class="fa-brands fa-github iconGittama"></i></a>
+        </div>
+    </footer>
+
+    <script src="/app/appOne.js"></script>
+    
+</body>
+
+
+
+</html>

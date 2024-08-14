@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    height: 100vh;
+    /*background-color: #e8e8e8;*/
+    background: url(../img/mapa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: "Krona One", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+main {
+    height: 95vh;
+}
+
+.container {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*lado A*/
+.container__encriptar {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+
+}
+
+.titulo__logo__encriptador h1{
+display: flex;
+
+}
+.ubicar__logo{
+    float: left;
+}
+
+.img__logo {
+    max-width: 200%;
+}
+
+.caja__texto__botton {
+    height: 100%;
+    margin-left: 10%;
+}
+
+.caja__texto {
+    height: 90%;
+
+}
+
+#area__texto {
+    height: 90%;
+    width: 100%;
+    padding: 3%;
+    font-family: "Krona One", sans-serif;
+    font-size: large;
+    box-shadow: 0 4px 20px 10px rgba(233, 202, 27, 0.2);
+    border: none;
+    resize: none;
+    color: aliceblue;
+    border-radius: 20px;
+    outline: none;
+    text-transform: lowercase;
+    background: url(../img/redes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.btn {
+    border-radius: 16px;
+    background: #535e6b;
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.centrar__botone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCopiar {
+    border-radius: 16px;
+    background: #506177;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+/*lado B*/
+.container__desencriptar {
+    box-shadow: 0 4px 20px 10px rgba(233, 202, 27, 0.2);
+    margin-top: 3%;
+    background-color: aliceblue;
+    padding: 2%;
+    width: 25vw;
+    height: 63vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(24, 21, 21, 0.5),
+            rgba(49, 44, 44, 0.5)), url(../img/fondo_encriptar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+.img__textos {
+    display: flex;
+    /*flex cambiar*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+
+}
+
+.imagenH {
+    width: 40%;
+    clip-path: circle(50%);
+}
+
+.mensaje_texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.mensaje_texto h3 {
+
+    font-size: 1rem;
+    margin-top: 5%;
+
+}
+
+.container__resultado {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resultado_encriptado {
+    width: 100%;
+    height: 50vh;
+    background: none;
+    resize: none;
+    border-radius: 20px;
+    outline: none;
+    font-family: "Krona One", sans-serif;
+    padding: 3%;
+    font-size: large;
+    color: aliceblue;
+
+
+
+}
+
+footer {
+    background-color: #234670;
+    height: 5vh;
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 20px;
+    margin-top: 0.7%;
+}
+
+.iconGit {
+    margin-left: 2%;
+}
+
+.iconGittama {
+    font-size: 30px;
+}
+
+/*utilitarios*/
+.colortex {
+    color: rgb(167, 207, 241);
+    font-size: large;
+}
+
+h1 {
+    font-size: 2rem;
+    color: aliceblue;
+
+}
+
+h3 {
+
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+
+}
+
+/**responsividad**/
+@media(max-width: 992px) {
+
+    .container,
+    .titulo__logo__encriptador {
+
+        flex-direction: column;
+
+    }
+
+    .caja__texto {
+        height: 40vh;
+        width: 83vw;
+    }
+
+    .colortex {
+        margin-top: 7px;
+        font-size: small;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 1.08rem;
+
+    }
+
+    .img__textos {
+        gap: 5px;
+    }
+
+    .container__desencriptar {
+        width: 83vw;
+        height: 30vh;
+        margin-left: 7%;
+
+    }
+
+    .imagenH {
+        width: 20%;
+        clip-path: circle(50%);
+    }
+
+    .img__textos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .mensaje_texto h3 {
+        font-size: 0.7rem;
+
+    }
+
+    .mensaje_texto {
+        margin-top: 3%;
+    }
+
+    .mensaje_texto h2 {
+        font-size: 1.2rem;
+    }
+
+    .resultado_encriptado {
+        height: 20vh;
+    }
+
+    .btnCopiar {
+        padding: 6px 14px;
+
+    }
+    .botones{
+        gap: 3%;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+
+
+}
